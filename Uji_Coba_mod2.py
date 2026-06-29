@@ -219,8 +219,8 @@ fig4, ax4 = plt.subplots(figsize=(8, 5))
 fig4.patch.set_facecolor(BG); ax4.set_facecolor(BG)
 tr_c = [np.sum(y_train==k) for k in CLASSES]; te_c = [np.sum(y_test==k) for k in CLASSES]
 x4 = np.arange(2)
-ax4.bar(x4-0.2, tr_c, 0.35, label="Training (70%)", color=RED, alpha=0.85, edgecolor=RED_DARK)
-ax4.bar(x4+0.2, te_c, 0.35, label="Testing (30%)",  color=GREY, alpha=0.85, edgecolor="#2c3e50")
+ax4.bar(x4-0.2, tr_c, 0.35, label="Training (80%)", color=RED, alpha=0.85, edgecolor=RED_DARK)
+ax4.bar(x4+0.2, te_c, 0.35, label="Testing (20%)",  color=GREY, alpha=0.85, edgecolor="#2c3e50")
 ax4.set_xticks(x4); ax4.set_xticklabels(CLASS_NAMES, fontsize=11)
 ax4.set_ylabel("Jumlah Sampel", fontsize=11)
 ax4.set_title("Distribusi Dataset Kaggle – Uji Coba Modifikasi 2 (80/20)",
